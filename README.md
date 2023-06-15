@@ -1,68 +1,26 @@
-# Bienvenido al test Laravel de Adoclic
+# Bienvenido al test Angular de Adoclic
 
-Para completar este ejercicio de prueba de Laravel, sigue los siguientes pasos:
+Para completar este ejercicio de prueba de Angular, sigue los siguientes pasos:
 
-## Instalación de Laravel
-1. Instala Laravel Framework 10.
-2. Utiliza una base de datos MySQL.
+## Instalación de Angular
+1. Instala Angular CLI versión 15 en tu entorno de desarrollo.
 
-## Creación de los modelos de datos
-1. Crea dos modelos de datos: `Entity` y `Category`.
-2. Define las propiedades de cada modelo según las siguientes especificaciones:
+## Creación del componente "dog-joke"
+1. Crea el componente "dog-joke" en tu proyecto Angular.
+2. Diseña la maqueta HTML del componente según la imagen proporcionada "dogJoke.jpg".
 
-`Entity`:
-- id
-- api
-- description
-- link
-- category_id
+## Configuración de routing
+1. Configura las rutas en tu archivo de enrutamiento para que el componente "dog-joke" se muestre en la URL http://localhost:4200/dogjoke.
 
-`Category`:
-- id
-- category
+## Creación de servicios para consumir las APIs
+1. Crea dos servicios en tu proyecto Angular para consumir las siguientes APIs:
+   - API de chistes ("Joke"): https://official-joke-api.appspot.com/random_joke
+   - API de imágenes de perros ("Img"): https://dog.ceo/api/breeds/image/random
+2. Utiliza la información obtenida de estas APIs para completar los datos del componente "dog-joke".
 
-## Creación del seeder para categorías
-1. Crea un seeder para insertar las categorías "Animals" y "Security" en la tabla de categorías.
-2. Utiliza el seeder para poblar la tabla con los registros correspondientes.
+## Actualización automática y manual de la información
+1. Implementa una función en el componente "dog-joke" para que se actualice automáticamente cada 20 segundos.
+2. Muestra un contador en un botón que indique el tiempo restante para la próxima actualización.
+3. Si se presiona el botón, se debe forzar la actualización inmediata de la broma e imagen.
 
-## Creación del servicio para consultar la API
-1. Crea un servicio que consulte la siguiente API: `https://api.publicapis.org/entries`.
-2. Extrae las entidades de las categorías "Animals" y "Security" de la respuesta obtenida.
-3. Inserta las entidades obtenidas en la tabla de entidades en la base de datos.
-4. Utiliza controladores, migraciones, recursos (resources), etc., según consideres necesario.
-
-## Creación de la API
-1. Crea una API en la siguiente ruta: `{SITE_URL}/api/{category}`.
-2. Esta API debe consultar la base de datos y devolver los datos en formato JSON con la siguiente estructura:
-
-```json
-{
-    "success": true,
-    "data": [
-        {
-            "api": "Application Environment Verification",
-            "description": "Android library and API to verify the safety of user devices, detect rooted devices and other risks",
-            "link": "https://github.com/fingerprintjs/aev",
-            "category": {
-                "id": 1,
-                "category": "Security"
-            }
-        },
-        {
-            "api": "BinaryEdge",
-            "description": "Provide access to BinaryEdge 40fy scanning platform",
-            "Auth": "apiKey",
-            "link": true,
-            "category": {
-                "id": 1,
-                "category": "Security"
-            }
-        },
-        ...
-    ]
-}
-```
-
-Recuerda ajustar `{SITE_URL}` con la URL correspondiente a tu aplicación.
-
-Este ejercicio busca evaluar tus habilidades en Laravel y la implementación de una API que consulte datos externos y los almacene en una base de datos.
+Este ejercicio tiene como objetivo evaluar tus habilidades en Angular, incluyendo la creación de componentes, enrutamiento, consumo de APIs y actualización automática de datos.
