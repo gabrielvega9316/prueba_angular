@@ -1,14 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { DogJokeComponent } from './dog-joke/dog-joke.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DogJokeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    RouterModule.forRoot([
+      {path: 'dogjoke', component: DogJokeComponent},
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]
