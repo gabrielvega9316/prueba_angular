@@ -1,5 +1,31 @@
 # Bienvenido al test Angular de Adoclic
 
+## Instrucciones de Instalación y Ejecución
+
+Sigue estos pasos para levantar el proyecto localmente:
+
+### 1. Instalar las dependencias
+
+Antes de ejecutar el proyecto, asegúrate de tener Node.js y npm instalados en tu sistema. Luego, ejecuta el siguiente comando para instalar las dependencias del proyecto:
+
+```bash
+npm install
+```
+
+### 2. Levantar el servidor de desarrollo
+Una vez que se han instalado las dependencias, puedes ejecutar el servidor de desarrollo con el siguiente comando:
+
+```bash
+ng serve
+```
+
+Esto compilará el proyecto y abrirá una ventana del navegador en http://localhost:4200/. 
+
+### 3. Acceder al proyecto
+¡Listo! Ahora deberías poder acceder al proyecto y solucion del challenge en tu navegador mediante la dirección http://localhost:4200/dogjoke.
+
+## Challenge
+
 Para completar este ejercicio de prueba de Angular, sigue los siguientes pasos:
 
 ## Instalación de Angular
